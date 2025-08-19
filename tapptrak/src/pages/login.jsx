@@ -6,7 +6,6 @@ const Login = () => {
   const [userType, setUserType] = useState('Admin');
 
   const handleLogin = () => {
-    // Handle login logic here
     console.log('Login attempt:', { username, password, userType });
   };
 
