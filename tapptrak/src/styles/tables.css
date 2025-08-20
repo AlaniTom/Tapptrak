@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @container (max-width: 120px) {
+    .hide-120 {
+      display: none;
+    }
+  }
+  @container (max-width: 240px) {
+    .hide-240 {
+      display: none;
+    }
+  }
+  @container (max-width: 360px) {
+    .hide-360 {
+      display: none;
+    }
+  }
+  @container (max-width: 480px) {
+    .hide-480 {
+      display: none;
+    }
+  }
+  @container (max-width: 536px) {
+    .hide-536 {
+      display: none;
+    }
+  }
+  @container (max-width: 656px) {
+    .hide-656 {
+      display: none;
+    }
+  }
+  @container (max-width: 776px) {
+    .hide-776 {
+      display: none;
+    }
+  }
+  @container (max-width: 896px) {
+    .hide-896 {
+      display: none;
+    }
+  }
+}

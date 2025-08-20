@@ -1,9 +1,10 @@
-import Login from './pages/login'
+import React from 'react';
+import Admin from './pages/admin';
 
 function App() {
   return (
-    <Login />
-  )
+    <Admin />
+  );
 }
 
-export default App
+export default App;
