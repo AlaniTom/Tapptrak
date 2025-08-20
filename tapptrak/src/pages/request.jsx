@@ -87,7 +87,7 @@
                       </th>
                       <th className="hide-480 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">Purpose</th>
                       <th className="hide-600 px-4 py-3 text-left text-[#111811] w-60 text-sm font-medium leading-normal">Status</th>
-                      <th className="hide-720 px-4 py-3 text-left text-[#111811] w-60 text-[#638863] text-sm font-medium leading-normal">
+                      <th className="hide-720 px-4 py-3 text-left w-60 text-[#638863] text-sm font-medium leading-normal">
                         Actions
                       </th>
                     </tr>
