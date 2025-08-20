@@ -8,6 +8,7 @@ const Login = () => {
     password: '',
     role: 'Admin'
   });
+  const [error, setError] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -15,18 +16,32 @@ const Login = () => {
       ...prev,
       [name]: value
     }));
+    // Clear error when user starts typing
+    if (error) setError('');
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Here you would typically make an API call to verify credentials
-    // For now, we'll just simulate a successful login
+    // Simple validation
+    if (!formData.username.trim() || !formData.password.trim()) {
+      setError('Username and password are required');
+      return;
+    }
+
+    // Clear any previous error
+    setError('');
+    
+    // Simple dummy login logic based on role
     if (formData.role === 'Admin') {
       navigate('/admin');
     } else {
       navigate('/guard');
     }
+
+    // Store user info in sessionStorage
+    sessionStorage.setItem('userRole', formData.role);
+    sessionStorage.setItem('username', formData.username);
   };
 
   return (
@@ -101,17 +116,26 @@ const Login = () => {
                   </label>
                 </div>
               </div>
+              {error && (
+                <div className="px-4 py-2">
+                  <p className="text-red-500 text-sm text-center">{error}</p>
+                </div>
+              )}
               <div className="flex px-4 py-3">
                 <button
                   type="submit"
-                  className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 flex-1 bg-[#14b856] text-[#0e1b13] text-sm font-bold leading-normal tracking-[0.015em]"
+                  className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 flex-1 bg-[#14b856] hover:bg-[#119548] transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]"
                 >
                   <span className="truncate">Log in</span>
                 </button>
               </div>
-              <p className="text-[#4e976b] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">
+              <button 
+                type="button"
+                onClick={() => setError('')}
+                className="text-[#4e976b] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline hover:text-[#3d785a] transition-colors"
+              >
                 Forgot password?
-              </p>
+              </button>
             </form>
           </div>
         </div>

@@ -6,10 +6,10 @@ const Guard = () => {
 
   return (
     <div className="min-h-screen bg-[#f8fcfa]">
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7f3ec] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#0e1b13]">
-            <div class="size-4">
+      <div className="layout-container flex h-full grow flex-col">
+        <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7f3ec] px-10 py-3">
+          <div className="flex items-center gap-4 text-[#0e1b13]">
+            <div className="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_6_543)">
                   <path
@@ -28,13 +28,14 @@ const Guard = () => {
                 </defs>
               </svg>
             </div>
-            <h2 class="text-[#0e1b13] text-lg font-bold leading-tight tracking-[-0.015em]">TappTrak</h2>
+            <h2 className="text-[#0e1b13] text-lg font-bold leading-tight tracking-[-0.015em]">TappTrak</h2>
           </div>
-          <div class="flex flex-1 justify-end gap-8">
+          <div className="flex flex-1 justify-end gap-8">
             <button
-              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e7f3ec] text-[#0e1b13] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              className="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e7f3ec] hover:bg-[#d0e7d9] text-[#0e1b13] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 transition-colors"
+              onClick={() => navigate('/alerts')}
             >
-              <div class="text-[#0e1b13]" data-icon="Bell" data-size="20px" data-weight="regular">
+              <div className="text-[#0e1b13]" data-icon="Bell" data-size="20px" data-weight="regular">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
                   <path
                     d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
@@ -43,83 +44,92 @@ const Guard = () => {
               </div>
             </button>
             <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTdwOIGGJYs_AJMSgulhfjWIpvcnT5odulIY9ffYek0hj0g-nOrqGe3hzYYAwJSV6Bxe1m-BkiDJVU55n0A2XP3jC60a1iByIwY9-CgHf7yjDywCj2wXLo1n2Vg-ddUEVbqJH8NT3aTpcSYqZuCTjh7BDd7I4jQvLswqzUX7X9azl-j0MZm4zZx9SvIQlqCUmzHjYuGyYNNMYbqRRvWFh0C5Cj2GAvccUlIuXItFDs5PYEa8upH4M8l5vD6FmIcEuyw16vt4s70rzo");'
+              className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 cursor-pointer hover:opacity-90 transition-opacity"
+              style={{backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTdwOIGGJYs_AJMSgulhfjWIpvcnT5odulIY9ffYek0hj0g-nOrqGe3hzYYAwJSV6Bxe1m-BkiDJVU55n0A2XP3jC60a1iByIwY9-CgHf7yjDywCj2wXLo1n2Vg-ddUEVbqJH8NT3aTpcSYqZuCTjh7BDd7I4jQvLswqzUX7X9azl-j0MZm4zZx9SvIQlqCUmzHjYuGyYNNMYbqRRvWFh0C5Cj2GAvccUlIuXItFDs5PYEa8upH4M8l5vD6FmIcEuyw16vt4s70rzo")`}}
+              onClick={() => navigate('/profile')}
             ></div>
           </div>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <h2 class="text-[#0e1b13] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Security Guard Dashboard</h2>
-            <div class="flex px-4 py-3 justify-center">
+        <div className="px-40 flex flex-1 justify-center py-5">
+          <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h2 className="text-[#0e1b13] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Security Guard Dashboard</h2>
+            <div className="flex px-4 py-3 justify-center">
               <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#14b856] text-[#0e1b13] text-base font-bold leading-normal tracking-[0.015em]"
+                onClick={() => navigate('/guardqr')}
+                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#14b856] hover:bg-[#119548] text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors"
               >
-                <span class="truncate">Scan QR Code</span>
+                <span className="truncate">Scan QR Code</span>
               </button>
             </div>
-            <h2 class="text-[#0e1b13] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Live Entries</h2>
-            <div class="flex items-center gap-4 bg-[#f8fcfa] px-4 min-h-[72px] py-2">
+            <h2 className="text-[#0e1b13] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Live Entries</h2>
+            <div className="flex items-center gap-4 bg-[#f8fcfa] hover:bg-white px-4 min-h-[72px] py-2 rounded-lg border border-[#d0e7d9] transition-colors">
               <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-1ebEoh12jMioI0Bi6FZFyDqFf3PrK_PIlPy3Tph6iQH-D0Da5L1nyxSJgCRz9Tzrn22cdpE-gIjj3t8-hrRV1solnwUQtoQrJTukxMdS9GBmMIP6t-50lT89n1sAwmVCoK0tiglPf3vFq5dr45ZLnIjX0UfdrSiaUCPmKr3nQuYalTXCEivMTHG-xhyevB_TsIkuBvMQazS1jnEfm6mXNOzdyoNc-zAoTBnsvMcHdbHFnG7i7K0vgHZ6y5fSpqKVxQ1LJl-aIGKz");'
+                className="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit border-2 border-[#e7f3ec]"
+                style={{backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-1ebEoh12jMioI0Bi6FZFyDqFf3PrK_PIlPy3Tph6iQH-D0Da5L1nyxSJgCRz9Tzrn22cdpE-gIjj3t8-hrRV1solnwUQtoQrJTukxMdS9GBmMIP6t-50lT89n1sAwmVCoK0tiglPf3vFq5dr45ZLnIjX0UfdrSiaUCPmKr3nQuYalTXCEivMTHG-xhyevB_TsIkuBvMQazS1jnEfm6mXNOzdyoNc-zAoTBnsvMcHdbHFnG7i7K0vgHZ6y5fSpqKVxQ1LJl-aIGKz")`}}
               ></div>
-              <div class="flex flex-col justify-center">
-                <p class="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Ethan Carter</p>
-                <p class="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Active</p>
+              <div className="flex flex-col justify-center">
+                <p className="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Ethan Carter</p>
+                <p className="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Active</p>
               </div>
             </div>
-            <div class="flex items-center gap-4 bg-[#f8fcfa] px-4 min-h-[72px] py-2">
+            <div className="flex items-center gap-4 bg-[#f8fcfa] hover:bg-white px-4 min-h-[72px] py-2 rounded-lg border border-[#d0e7d9] transition-colors mt-2">
               <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-JcOrcTFIXcZGvkvcSC7uiVPffYNb5zz9Ic696EmdAGlNWd9g2dI0v5GKF74OR0y3I2JqQb7gf83XQvhU1tMungdwjD7GqlDuXfhlSRe7LGz4vLDtrjtxCmY9RkB554QFWrd8vxNVvacyeVBZQVt1Bqx-1PNV_-XF9HUYao1QfDr9kMOEIWNX8amBPY9ae0sMMi5r-pqfw7ZPgcQBdpWKAoKc5YhKW6-IJ-R2Tzf3Y2_WmM0i8RoRHlpAWpk5QZOUlyg44IbVZPPO");'
+                className="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit border-2 border-[#e7f3ec]"
+                style={{backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-JcOrcTFIXcZGvkvcSC7uiVPffYNb5zz9Ic696EmdAGlNWd9g2dI0v5GKF74OR0y3I2JqQb7gf83XQvhU1tMungdwjD7GqlDuXfhlSRe7LGz4vLDtrjtxCmY9RkB554QFWrd8vxNVvacyeVBZQVt1Bqx-1PNV_-XF9HUYao1QfDr9kMOEIWNX8amBPY9ae0sMMi5r-pqfw7ZPgcQBdpWKAoKc5YhKW6-IJ-R2Tzf3Y2_WmM0i8RoRHlpAWpk5QZOUlyg44IbVZPPO")`}}
               ></div>
-              <div class="flex flex-col justify-center">
-                <p class="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Olivia Bennett</p>
-                <p class="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Active</p>
+              <div className="flex flex-col justify-center">
+                <p className="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Olivia Bennett</p>
+                <p className="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Active</p>
               </div>
             </div>
-            <div class="flex items-center gap-4 bg-[#f8fcfa] px-4 min-h-[72px] py-2">
+            <div className="flex items-center gap-4 bg-[#f8fcfa] hover:bg-white px-4 min-h-[72px] py-2 rounded-lg border border-[#d0e7d9] transition-colors mt-2">
               <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWwPZAQisPj5OMlm8Np5Hrn9fU5bfLBt1Opsn7TTQ27EUAtkHFQ4iqWVsZ9j-4v3nSLFLtVbyN_yzWL338bcHCnqj1FNSDRVubM819kxd4z6UVSfBGW8HQT04aGs0t9LtWVYKPEG5NJTzpndOdqWBLQMMndSCdPV_fr3pz49Ed55dMRxxy12J94wc53W3v3GylgoCCFWJmd3jVpBDqnAfUe81wlFVigRnmipUbZILLDeKZE4Uami2dNTooDOS8oYGcnqZzprgDoo_u");'
+                className="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit border-2 border-[#e7f3ec]"
+                style={{backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWwPZAQisPj5OMlm8Np5Hrn9fU5bfLBt1Opsn7TTQ27EUAtkHFQ4iqWVsZ9j-4v3nSLFLtVbyN_yzWL338bcHCnqj1FNSDRVubM819kxd4z6UVSfBGW8HQT04aGs0t9LtWVYKPEG5NJTzpndOdqWBLQMMndSCdPV_fr3pz49Ed55dMRxxy12J94wc53W3v3GylgoCCFWJmd3jVpBDqnAfUe81wlFVigRnmipUbZILLDeKZE4Uami2dNTooDOS8oYGcnqZzprgDoo_u")`}}
               ></div>
-              <div class="flex flex-col justify-center">
-                <p class="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Noah Thompson</p>
-                <p class="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Exited</p>
+              <div className="flex flex-col justify-center">
+                <p className="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Noah Thompson</p>
+                <p className="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Exited</p>
               </div>
             </div>
-            <h2 class="text-[#0e1b13] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Alerts</h2>
-            <div class="flex items-center gap-4 bg-[#f8fcfa] px-4 min-h-[72px] py-2">
+            <h2 className="text-[#0e1b13] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Alerts</h2>
+            <div className="flex items-center gap-4 bg-[#f8fcfa] hover:bg-white px-4 min-h-[72px] py-2 rounded-lg border border-[#d0e7d9] transition-colors">
               <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFzaLGPG0MpYseNpPfQB-MawZNzj2SDddCChy9P3YNrkIg3f_yauIawZnMGDZyuZkC4sc-wmIW9WiWvWSfVuy4ePg_lQBQdDrRoS0ogvma-7OHfmZbLl5Y9uiYaq4M6sofNdHa9Tncdx0RrGcSYNnj8Fb0xIDYcJdO3kUMFVinlUjPaM83ZHc5ek3cpbUQcl9BnXllu54MHMVl3_rq_l3GPXegXe5g6u4Cvaoi83BsJjBasht807z4g4V_pUntqwrDPAwb83SYObKX");'
+                className="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit border-2 border-[#e7f3ec]"
+                style={{backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFzaLGPG0MpYseNpPfQB-MawZNzj2SDddCChy9P3YNrkIg3f_yauIawZnMGDZyuZkC4sc-wmIW9WiWvWSfVuy4ePg_lQBQdDrRoS0ogvma-7OHfmZbLl5Y9uiYaq4M6sofNdHa9Tncdx0RrGcSYNnj8Fb0xIDYcJdO3kUMFVinlUjPaM83ZHc5ek3cpbUQcl9BnXllu54MHMVl3_rq_l3GPXegXe5g6u4Cvaoi83BsJjBasht807z4g4V_pUntqwrDPAwb83SYObKX")`}}
               ></div>
-              <div class="flex flex-col justify-center">
-                <p class="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Visitor: Sophia Clark</p>
-                <p class="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Time exceeded</p>
+              <div className="flex flex-col justify-center">
+                <p className="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Visitor: Sophia Clark</p>
+                <p className="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Time exceeded</p>
               </div>
             </div>
-            <div class="flex items-center gap-4 bg-[#f8fcfa] px-4 min-h-[72px] py-2">
+            <div className="flex items-center gap-4 bg-[#f8fcfa] hover:bg-white px-4 min-h-[72px] py-2 rounded-lg border border-[#d0e7d9] transition-colors mt-2">
               <div
-                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBa8Ba3AmQsLGlRrusYiRjq6smxSFEZOFcaQLBWGU_1coCk1lz53eMfVDmOL4LdMR2UDoVFE3bK83ke9ht_YzAZf4b24OR9sXubo5K6-dSMzBE8lZyxpgd8kYfOmrn9zh5Rfx0ybFn5Bkhla8tftRHh9DM51jAL9ciSMKRdbsZfdD4GbnsJCvLB8hMHOGoQOKSidsrMoJcHGPuZfrtJJBgRaiZGz0gHwRAcM5dX5dOcQTMYsDeIB9w1p9jERvvuBiS9-5Ym4uYBOVa");'
+                className="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit border-2 border-[#e7f3ec]"
+                style={{backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBa8Ba3AmQsLGlRrusYiRjq6smxSFEZOFcaQLBWGU_1coCk1lz53eMfVDmOL4LdMR2UDoVFE3bK83ke9ht_YzAZf4b24OR9sXubo5K6-dSMzBE8lZyxpgd8kYfOmrn9zh5Rfx0ybFn5Bkhla8tftRHh9DM51jAL9ciSMKRdbsZfdD4GbnsJCvLB8hMHOGoQOKSidsrMoJcHGPuZfrtJJBgRaiZGz0gHwRAcM5dX5dOcQTMYsDeIB9w1p9jERvvuBiS9-5Ym4uYBOVa")`}}
               ></div>
-              <div class="flex flex-col justify-center">
-                <p class="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Visitor: Liam Davis</p>
-                <p class="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Failed exit tracking</p>
+              <div className="flex flex-col justify-center">
+                <p className="text-[#0e1b13] text-base font-medium leading-normal line-clamp-1">Visitor: Liam Davis</p>
+                <p className="text-[#4e976b] text-sm font-normal leading-normal line-clamp-2">Failed exit tracking</p>
               </div>
             </div>
             <div class="flex px-4 py-3 justify-center">
               <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7f3ec] text-[#0e1b13] text-sm font-bold leading-normal tracking-[0.015em]"
+                onClick={() => {
+                  sessionStorage.removeItem('userRole');
+                  sessionStorage.removeItem('username');
+                  navigate('/login');
+                }}
+                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7f3ec] hover:bg-[#d0e7d9] text-[#0e1b13] text-sm font-bold leading-normal tracking-[0.015em] transition-colors"
               >
-                <span class="truncate">End Shift</span>
+                <span className="truncate">End Shift</span>
               </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  );
+};
+
+export default Guard;
