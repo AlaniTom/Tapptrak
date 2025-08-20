@@ -78,38 +78,38 @@
                 <table class="flex-1">
                   <thead>
                     <tr class="bg-white">
-                      <th class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-120 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
+                      <th className="hide-120 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
                         Request ID
                       </th>
-                      <th class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-240 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">Date</th>
-                      <th class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-360 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
+                      <th className="hide-240 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">Date</th>
+                      <th className="hide-360 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
                         Resident
                       </th>
-                      <th class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-480 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">Purpose</th>
-                      <th class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-600 px-4 py-3 text-left text-[#111811] w-60 text-sm font-medium leading-normal">Status</th>
-                      <th class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-720 px-4 py-3 text-left text-[#111811] w-60 text-[#638863] text-sm font-medium leading-normal">
+                      <th className="hide-480 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">Purpose</th>
+                      <th className="hide-600 px-4 py-3 text-left text-[#111811] w-60 text-sm font-medium leading-normal">Status</th>
+                      <th className="hide-720 px-4 py-3 text-left text-[#111811] w-60 text-[#638863] text-sm font-medium leading-normal">
                         Actions
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="border-t border-t-[#dce5dc]">
-                      <td class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111811] text-sm font-normal leading-normal">REQ12345</td>
-                      <td class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-240 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
+                      <td className="hide-120 h-[72px] px-4 py-2 w-[400px] text-[#111811] text-sm font-normal leading-normal">REQ12345</td>
+                      <td className="hide-240 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
                         2024-07-26 10:00 AM
                       </td>
-                      <td class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-360 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
+                      <td className="hide-360 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
                         Emily Carter
                       </td>
-                      <td class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-480 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">Plumbing</td>
-                      <td class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-600 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                      <td className="hide-480 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">Plumbing</td>
+                      <td className="hide-600 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
                         <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#f0f4f0] text-[#111811] text-sm font-medium leading-normal w-full"
+                          className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#f0f4f0] text-[#111811] text-sm font-medium leading-normal w-full"
                         >
-                          <span class="truncate">Pending</span>
+                          <span className="truncate">Pending</span>
                         </button>
                       </td>
-                      <td class="table-164353ed-5afb-4cee-855c-4614afc748a5-column-720 h-[72px] px-4 py-2 w-60 text-[#638863] text-sm font-bold leading-normal tracking-[0.015em]">
+                      <td className="hide-720 h-[72px] px-4 py-2 w-60 text-[#638863] text-sm font-bold leading-normal tracking-[0.015em]">
                         Approve | Set Duration | Assign Flat | Input Purpose
                       </td>
                     </tr>
@@ -202,14 +202,7 @@
                   </tbody>
                 </table>
               </div>
-              <style>
-                          @container(max-width:120px){.table-164353ed-5afb-4cee-855c-4614afc748a5-column-120{display: none;}}
-                @container(max-width:240px){.table-164353ed-5afb-4cee-855c-4614afc748a5-column-240{display: none;}}
-                @container(max-width:360px){.table-164353ed-5afb-4cee-855c-4614afc748a5-column-360{display: none;}}
-                @container(max-width:480px){.table-164353ed-5afb-4cee-855c-4614afc748a5-column-480{display: none;}}
-                @container(max-width:600px){.table-164353ed-5afb-4cee-855c-4614afc748a5-column-600{display: none;}}
-                @container(max-width:720px){.table-164353ed-5afb-4cee-855c-4614afc748a5-column-720{display: none;}}
-              </style>
+              
             </div>
           </div>
         </div>

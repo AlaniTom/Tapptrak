@@ -102,53 +102,53 @@
                 <table class="flex-1">
                   <thead>
                     <tr class="bg-white">
-                      <th class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-120 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">Name</th>
-                      <th class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-240 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">Phone</th>
-                      <th class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-296 px-4 py-3 text-left text-[#111811] w-14 text-sm font-medium leading-normal">Photo</th>
-                      <th class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-416 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
+                      <th className="hide-120 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">Name</th>
+                      <th className="hide-240 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">Phone</th>
+                      <th className="hide-360 px-4 py-3 text-left text-[#111811] w-14 text-sm font-medium leading-normal">Photo</th>
+                      <th className="hide-480 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
                         Flat No.
                       </th>
-                      <th class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-536 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
+                      <th className="hide-536 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
                         Entry Time
                       </th>
-                      <th class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-656 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
+                      <th className="hide-656 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
                         Exit Time
                       </th>
-                      <th class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-776 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
+                      <th className="hide-776 px-4 py-3 text-left text-[#111811] w-[400px] text-sm font-medium leading-normal">
                         Delivery Company
                       </th>
-                      <th class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-896 px-4 py-3 text-left text-[#111811] w-60 text-sm font-medium leading-normal">Status</th>
+                      <th className="hide-896 px-4 py-3 text-left text-[#111811] w-60 text-sm font-medium leading-normal">Status</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="border-t border-t-[#dce5dc]">
-                      <td class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111811] text-sm font-normal leading-normal">
+                      <td className="hide-120 h-[72px] px-4 py-2 w-[400px] text-[#111811] text-sm font-normal leading-normal">
                         Owen Carter
                       </td>
-                      <td class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-240 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
+                      <td className="hide-240 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
                         +1-555-123-4567
                       </td>
-                      <td class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-296 h-[72px] px-4 py-2 w-14 text-sm font-normal leading-normal">
+                      <td className="hide-360 h-[72px] px-4 py-2 w-14 text-sm font-normal leading-normal">
                         <div
-                          class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10"
-                          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgQ0ThO-uPdynrAFUGLaTUEXFyONzXqkCZXzlshqU-_OFMWSQJqipPDvdAlAYt2UrgI4a4hlYVEIUAe31UbH7ay_7Bh_Ba7LmX-86iT5NVyq9FLqWpygM2MJ2zbZshPQe87Z0_0kMLD6I55oCgzK7949MUezddph34Dsg2QO8b-8aSPX3xlJY1i-LClaN_wBZROldZ34wc5NO72TxtBxecDYemaZ6RALaT-A9_izCtml8XxjQYY7KH34w-jo0TFmJHHCes3IlJnK7n");'
+                          className="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10"
+                          style={{backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgQ0ThO-uPdynrAFUGLaTUEXFyONzXqkCZXzlshqU-_OFMWSQJqipPDvdAlAYt2UrgI4a4hlYVEIUAe31UbH7ay_7Bh_Ba7LmX-86iT5NVyq9FLqWpygM2MJ2zbZshPQe87Z0_0kMLD6I55oCgzK7949MUezddph34Dsg2QO8b-8aSPX3xlJY1i-LClaN_wBZROldZ34wc5NO72TxtBxecDYemaZ6RALaT-A9_izCtml8XxjQYY7KH34w-jo0TFmJHHCes3IlJnK7n")`}}
                         ></div>
                       </td>
-                      <td class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-416 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">101</td>
-                      <td class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-536 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
+                      <td className="hide-480 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">101</td>
+                      <td className="hide-536 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
                         2024-07-26 10:00 AM
                       </td>
-                      <td class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-656 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
+                      <td className="hide-656 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
                         2024-07-26 11:30 AM
                       </td>
-                      <td class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-776 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
+                      <td className="hide-776 h-[72px] px-4 py-2 w-[400px] text-[#638863] text-sm font-normal leading-normal">
                         Swift Delivery
                       </td>
-                      <td class="table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-896 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                      <td className="hide-896 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
                         <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#f0f4f0] text-[#111811] text-sm font-medium leading-normal w-full"
+                          className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#f0f4f0] text-[#111811] text-sm font-medium leading-normal w-full"
                         >
-                          <span class="truncate">Exited</span>
+                          <span className="truncate">Exited</span>
                         </button>
                       </td>
                     </tr>
@@ -410,16 +410,7 @@
                   </tbody>
                 </table>
               </div>
-              <style>
-                          @container(max-width:120px){.table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-120{display: none;}}
-                @container(max-width:240px){.table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-240{display: none;}}
-                @container(max-width:296px){.table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-296{display: none;}}
-                @container(max-width:416px){.table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-416{display: none;}}
-                @container(max-width:536px){.table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-536{display: none;}}
-                @container(max-width:656px){.table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-656{display: none;}}
-                @container(max-width:776px){.table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-776{display: none;}}
-                @container(max-width:896px){.table-8777550f-7a73-4d43-8119-13ca97ca2b7d-column-896{display: none;}}
-              </style>
+              
             </div>
           </div>
         </div>
