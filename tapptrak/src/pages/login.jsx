@@ -23,13 +23,9 @@ const Login = () => {
     // Here you would typically make an API call to verify credentials
     // For now, we'll just simulate a successful login
     if (formData.role === 'Admin') {
-      // Store authentication state (you might want to use a proper auth management solution)
-      localStorage.setItem('isAuthenticated', 'true');
-      localStorage.setItem('userRole', 'admin');
       navigate('/admin');
     } else {
-      // Handle regular user login
-      alert('Regular user login - implement your logic here');
+      navigate('/guard');
     }
   };
 
